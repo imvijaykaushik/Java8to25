@@ -3,8 +3,14 @@ package com.zyngora.data;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Supplier;
 
 public class StudentDatabase {
+
+    public static Supplier<Student> studentSupplier = () -> {
+        return new Student("Ajay", 2, 3.6, "male", Arrays.asList("swimming", "basketball", "volleyball"));
+    };
+
     public static List<Student> getAllStudents() {
         Student student1 = new Student("Ajay", 2, 3.6, "male", Arrays.asList("swimming", "basketball", "volleyball"));
         Student student2 = new Student("Anil", 2, 3.8, "male", Arrays.asList("swimming", "basketball", "soccer"));

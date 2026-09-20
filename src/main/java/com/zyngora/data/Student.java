@@ -9,7 +9,8 @@ public class Student {
     private double gpa;
     private String gender;
     List<String> activities = new ArrayList<>();
-    public Student(String name, int grade, double gpa, String gender,List<String> activities) {
+
+    public Student(String name, int grade, double gpa, String gender, List<String> activities) {
         this.name = name;
         this.grade = grade;
         this.gpa = gpa;
@@ -51,6 +52,10 @@ public class Student {
 
     public List<String> getActivities() {
         return activities;
+    }
+
+    public void printActivities() {
+        System.out.println("Activities:" + activities);
     }
 
     public void setActivities(List<String> activities) {

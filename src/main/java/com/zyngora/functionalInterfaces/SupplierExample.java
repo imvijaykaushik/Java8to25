@@ -13,7 +13,7 @@ public class SupplierExample {
     // it seems like opposite of Consumer
 
     static Supplier<Student> studentSupplier = () -> {
-        return new Student("Ajay", 2, 3.6, "male", Arrays.asList("swimming", "basketball", "volleyball"));
+        return new Student("Ajay", 2, 3.6, "male", Arrays.asList("swimming", "basketball", "volleyball"),8);
     };
 
     static Supplier<List<Student>> listSupplier = () -> StudentDatabase.getAllStudents();
